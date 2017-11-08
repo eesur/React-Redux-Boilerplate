@@ -26,7 +26,7 @@ const App = () => (
     />
     <UserDetails />
     <Divider
-      py={4}
+      py={2}
       w={1}
       color='#e4e6dd'
     />

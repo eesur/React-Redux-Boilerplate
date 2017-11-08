@@ -16,13 +16,13 @@ const UserDetail = (props) => {
   }
   return (
     <Provider>
-      <Image src={props.user.thumbnail} />
       <Lead>
         {props.user.id} : {props.user.first} {props.user.last}
       </Lead>
-      <Measure>
+      <Measure py={2}>
         Description: {props.user.description}
       </Measure>
+      <Image src={props.user.thumbnail} />
     </Provider>
   )
 }
