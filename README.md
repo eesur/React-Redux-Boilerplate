@@ -74,6 +74,8 @@ It has been changed/tweaked to:
 
 <img width="318" alt="scrren shot" src="https://user-images.githubusercontent.com/1597761/32547194-556925c2-c479-11e7-87e6-85e88b5cee1d.png">
 
+View build: https://eesur.github.io/React-Redux-Boilerplate
+
 -------------------------
 
 ## Getting Started
