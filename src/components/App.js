@@ -1,16 +1,36 @@
 import React from 'react'
 import UserList from '../containers/user-list'
 import UserDetails from '../containers/user-detail'
+import {
+  Provider,
+  Divider,
+  Subhead
+} from 'rebass'
 
 const App = () => (
-  <div>
-    <h2>User List</h2>
+  <Provider>
+    <Subhead
+      color='#635045'
+      is='h3'
+      f={18}
+      mb={2}
+      children='User List:'
+    />
     <UserList />
-    <hr />
-    <h2>User Details</h2>
+    <Subhead
+      color='#635045'
+      is='h3'
+      f={18}
+      mb={2}
+      children='User Details:'
+    />
     <UserDetails />
-
-  </div>
+    <Divider
+      py={4}
+      w={1}
+      color='#e4e6dd'
+    />
+  </Provider>
 )
 
 export default App

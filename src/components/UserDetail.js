@@ -1,6 +1,8 @@
 import React, {Component} from 'react'
 import {
   Provider,
+  Measure,
+  Lead,
   Image
 } from 'rebass'
 
@@ -15,8 +17,12 @@ const UserDetail = (props) => {
   return (
     <Provider>
       <Image src={props.user.thumbnail} />
-      <h2>{props.user.first} {props.user.last}</h2>
-      <h3>Description: {props.user.description}</h3>
+      <Lead>
+        {props.user.id} : {props.user.first} {props.user.last}
+      </Lead>
+      <Measure>
+        Description: {props.user.description}
+      </Measure>
     </Provider>
   )
 }

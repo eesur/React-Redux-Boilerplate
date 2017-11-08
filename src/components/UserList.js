@@ -10,12 +10,12 @@ const renderList = (props) => {
   const list = props.users.map((user) => {
     return (
       <Provider key={user.id}>
-        <Column>
+        <Column mb={0}>
           <NavLink
             href='#!'
             onClick={() => props.selectUser(user)}
           >
-            {user.first}
+            {user.id} {user.first}
           </NavLink>
         </Column>
       </Provider>
@@ -26,7 +26,7 @@ const renderList = (props) => {
 
 const UserList = (props) => {
   return (
-    <Row pl={2}>
+    <Row pl={1} mb={2} bg='#e4e6dd'>
       {renderList(props)}
     </Row>
   )
