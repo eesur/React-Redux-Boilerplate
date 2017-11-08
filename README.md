@@ -39,7 +39,7 @@
  │                        │      │   applications state   │
  │  C O M P O N E N T S   │      │                        │
  │                        │      └────────────────────────┘
- │     react statless     │                   ▲
+ │     react stateless    │                   ▲
  │       components       │                   │
  │                        │                   │
  │                        │                   │
