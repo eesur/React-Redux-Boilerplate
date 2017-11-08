@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React from 'react'
 import {
   Provider,
   Measure,
@@ -7,13 +7,13 @@ import {
 } from 'rebass'
 
 /*
- * We need "if(!this.props.user)" because we set state to null by default
+ * We need 'if' (!this.props.user)" if we set state to null by default
  * */
 
 const UserDetail = (props) => {
-  if (!props.user) {
-    return (<div>Select a user...</div>)
-  }
+  // if (!props.user) {
+  //   return (<div>Select a user...</div>)
+  // }
   return (
     <Provider>
       <Lead>
